@@ -1,0 +1,11 @@
+﻿@model IEnumerable<JsonSort.Models.CustomerJoinSort>
+
+<div class="row">
+    @foreach (var cust in Model)
+    {
+        <div>
+            <label>@cust.first_name</label> <label>@cust.middle_name</label> <label>@cust.last_name</label> <label>@cust.sortOrderLast</label> <label>@cust.sortOrderFirst</label> <label>@cust.sortOrderMiddle</label>
+        </div>
+
+    }
+</div>
